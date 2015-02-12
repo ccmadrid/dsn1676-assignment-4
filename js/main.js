@@ -28,14 +28,16 @@ var fruit = [blueberries, grapes, redCurrant];
 
 var writeFruit = function (fruit) {
 	fruit.forEach(function (item) {
-		document.write('<h2>' + item.name + '</h2>');
-		document.write('<dl>');
+		document.write('<div class="unit unit-s-1 unit-m-1-3">');
+		document.write('<h2 class="heading">' + item.name + '</h2>');
+		document.write('<dl class="list">');
 		document.write('<dt>Species:</dt><dd>' + item.species + '</dd>');
 		document.write('<dt>Grows on shrub:</dt><dd>' + item.growsOnShrub + '</dd>');
 		document.write('<dt>Energy:</dt><dd>' + item.energy + '</dd>');
 		document.write('<dt>Carbohydrates:</dt><dd>' + item.carbs + '</dd>');
 		document.write('<dt>Protein:</dt><dd>' + item.protein + '</dd>');
 		document.write('</dl>')
+		document.write('</div>')
 	});
 };
 
