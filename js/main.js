@@ -3,7 +3,7 @@ var blueberries = {
 	species: 'Vaccinium corymbosum',
 	growsOnShrub: true,
 	energy: '240 kJ',
-	carbohydrates: '14.49 g',
+	carbs: '14.49 g',
 	protein: '0.74 g'
 };
 
@@ -12,7 +12,7 @@ var grapes = {
 	species: 'Vitis vinifera',
 	growsOnShrub: false,
 	energy: '288 kJ',
-	carbohydrates: '18.1 g',
+	carbs: '18.1 g',
 	protein: '0.72 g'
 };
 var redCurrant = {
@@ -20,9 +20,23 @@ var redCurrant = {
 	species: 'Ribes rubrum',
 	growsOnShrub: true,
 	energy: '234 kJ',
-	carbohydrates: '13.8 g',
+	carbs: '13.8 g',
 	protein: '1.4 g'
 };
 
 var fruit = [blueberries, grapes, redCurrant];
 
+var writeFruit = function (fruit) {
+	fruit.forEach(function (item) {
+		document.write('<h2>' + item.name + '</h2>');
+		document.write('<dl>');
+		document.write('<dt>Species:</dt><dd>' + item.species + '</dd>');
+		document.write('<dt>Grows on shrub:</dt><dd>' + item.species + '</dd>');
+		document.write('<dt>Energy:</dt><dd>' + item.species + '</dd>');
+		document.write('<dt>Carbohydrates:</dt><dd>' + item.carbs + '</dd>');
+		document.write('<dt>Protein:</dt><dd>' + item.protein + '</dd>');
+		document.write('</dl>')
+	});
+};
+
+writeDinos(fruit);
