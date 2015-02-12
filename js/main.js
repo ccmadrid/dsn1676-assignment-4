@@ -28,7 +28,7 @@ var fruit = [blueberries, grapes, redCurrant];
 
 var writeFruit = function (fruit) {
 	fruit.forEach(function (item) {
-		document.write('<div class="unit unit-s-1 unit-m-1-3">');
+		document.write('<div class="unit unit-s-1 unit-m-1-3 island berry">');
 		document.write('<h2 class="heading">' + item.name + '</h2>');
 		document.write('<dl class="list">');
 		document.write('<dt>Species:</dt><dd>' + item.species + '</dd>');
