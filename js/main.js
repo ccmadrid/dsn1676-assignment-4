@@ -37,7 +37,7 @@ var checkShrub = function (check) {
 var writeFruit = function (fruit) {
 	fruit.forEach(function (item, i) {
 		var berry = [' blue', ' grape', ' red'];
-		document.write('<div class="unit unit-s-1 unit-m-1-3 island berry' + berry[i] + '">');
+		document.write('<div class="unit unit-s-1 unit-m-1-3 berry' + berry[i] + '"><div class="whitebg">');
 		document.write('<h2 class="heading">' + item.name + '</h2>');
 		document.write('<dl class="list">');
 		document.write('<dt>Species:</dt><dd>' + item.species + '</dd>');
@@ -46,7 +46,7 @@ var writeFruit = function (fruit) {
 		document.write('<dt>Carbohydrates:</dt><dd>' + item.carbs + '</dd>');
 		document.write('<dt>Protein:</dt><dd>' + item.protein + '</dd>');
 		document.write('</dl>');
-		document.write('</div>');
+		document.write('</div></div>');
 		});
 };
 
