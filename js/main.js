@@ -31,12 +31,12 @@ var writeFruit = function (fruit) {
 		document.write('<h2>' + item.name + '</h2>');
 		document.write('<dl>');
 		document.write('<dt>Species:</dt><dd>' + item.species + '</dd>');
-		document.write('<dt>Grows on shrub:</dt><dd>' + item.species + '</dd>');
-		document.write('<dt>Energy:</dt><dd>' + item.species + '</dd>');
+		document.write('<dt>Grows on shrub:</dt><dd>' + item.growsOnShrub + '</dd>');
+		document.write('<dt>Energy:</dt><dd>' + item.energy + '</dd>');
 		document.write('<dt>Carbohydrates:</dt><dd>' + item.carbs + '</dd>');
 		document.write('<dt>Protein:</dt><dd>' + item.protein + '</dd>');
 		document.write('</dl>')
 	});
 };
 
-writeDinos(fruit);
+writeFruit(fruit);
