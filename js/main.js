@@ -15,7 +15,7 @@ var grapes = {
 	carbohydrates: '18.1 g',
 	protein: '0.72 g'
 };
-var RedCurrant = {
+var redCurrant = {
 	name: 'Red currant',
 	species: 'Ribes rubrum',
 	growsOnShrub: true,
@@ -23,3 +23,6 @@ var RedCurrant = {
 	carbohydrates: '13.8 g',
 	protein: '1.4 g'
 };
+
+var fruit = [blueberries, grapes, redCurrant];
+
